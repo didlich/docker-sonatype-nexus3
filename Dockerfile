@@ -46,8 +46,7 @@ VOLUME ${NEXUS_DATA}
 EXPOSE 8081
 WORKDIR ${NEXUS_HOME}
 
-ENV JAVA_MAX_MEM 1200m
-ENV JAVA_MIN_MEM 1200m
-ENV EXTRA_JAVA_OPTS ""
+ENV INSTALL4J_ADD_VM_PARAMS="-Xms1200m -Xmx1200m -XX:MaxDirectMemorySize=2g -Djava.util.prefs.userRoot=${NEXUS_DATA}/javaprefs"
+
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
