@@ -2,8 +2,9 @@
 
 This docker image is more or less a clone of sonatype's [sonatype/nexus3](https://hub.docker.com/r/sonatype/nexus3/) image from the officiall docker hub repository.
 It differs in:
-- base image is alpine 3.7
+- base image is alpine 3.8
 - JVM is oracle [anapsix/alpine-java](https://hub.docker.com/r/anapsix/alpine-java/)
+- [JVM is docker aware](https://efekahraman.github.io/2018/04/docker-awareness-in-java), -XX:+UseCGroupMemoryLimitForHeap, -XX:+UnlockExperimentalVMOptions
 - set USER_UID + USER_GID for volume permissions
 
 In this way the created image is very small compared to original. You can set USER_UID + USER_GID, which allows you to persist data in a host directoy without hadache.
