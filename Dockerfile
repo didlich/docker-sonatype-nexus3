@@ -1,6 +1,6 @@
 FROM anapsix/alpine-java:8_server-jre
 
-LABEL maintainer="didlich@t-online.de"
+LABEL maintainer="didlich.apps@gmail.com"
 
 ARG NEXUS_VERSION=3.19.1-01
 ARG NEXUS_DOWNLOAD_URL=https://download.sonatype.com/nexus/3/nexus-${NEXUS_VERSION}-unix.tar.gz
