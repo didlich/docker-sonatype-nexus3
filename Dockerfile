@@ -2,9 +2,9 @@ FROM anapsix/alpine-java:8_server-jre
 
 LABEL maintainer="didlich.apps@gmail.com"
 
-ARG NEXUS_VERSION=3.28.0-01
+ARG NEXUS_VERSION=3.28.1-01
 ARG NEXUS_DOWNLOAD_URL=https://download.sonatype.com/nexus/3/nexus-${NEXUS_VERSION}-unix.tar.gz
-ARG NEXUS_DOWNLOAD_SHA256_HASH=17bc9f06c6616f51856e55afd5daab9934fdb1b39b133442987db311e716cd40
+ARG NEXUS_DOWNLOAD_SHA256_HASH=c87bbcedf6503e3776afede9903236ab7d8f68c31e8f1edf060e16f415166a61
 
 ENV NEXUS_USER nexus
 ENV NEXUS_GROUP nexus
